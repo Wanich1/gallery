@@ -1,0 +1,19 @@
+body{
+    font-family: helvetica;
+    color: black;
+}
+
+.nav-link{
+    color: black;
+    padding: 15px;
+    border-left: 1px solid black;
+    border-radius: 0!important;
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
+.nav-link:focus,.nav-link:hover{
+    color: black;
+}
