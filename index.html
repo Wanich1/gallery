@@ -16,8 +16,53 @@
 
 <body>
     <div class="container">
-        <h2 class="fw-bold">Lorem Ipsum</h2>
-        <hr class="" style="border: 1px solid red;" width="18%">
+        <div class="row bg-secondary py-5 text-center">
+            <div class="col-8 text-white mx-auto py-5">
+                <h3 class="h3 pt-2">
+                    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                    </p>
+                </h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem non laboriosam quisquam nobis ad quia
+                    illum odit, ratione ipsam cumque tempora ipsum cum repellendus facilis dicta ut commodi libero iusto
+                    consequatur quos qui beatae natus. Sequi, sunt itaque. Labore qui animi non earum repudiandae
+                    deleniti quasi? Iure delectus aspernatur est?</p>
+            </div>
+        </div>
+        <div class="row vdivide text-center py-5 my-3">
+            <div class="col border-right">
+                <h2 class="mb-5">
+                    Lorem, ipsum.
+                </h2>
+                <p>There is no one who loves pain itself, who seeks after
+
+                    it and wants to have it, simply because it is pain...</p>
+            </div>
+            <div class="col" style="border-left: 1px solid black;">
+                <h2 class="mb-5">
+                    Lorem, ipsum.
+                </h2>
+                <p>There is no one who loves pain itself, who seeks after
+
+                    it and wants to have it, simply because it is pain...</p>
+            </div>
+        </div>
+        <div class="row bg-secondary py-5 text-center">
+            <div class="col-8 text-white mx-auto py-5">
+                <h3 class="h3 pt-2">
+                    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                    </p>
+                </h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem non laboriosam quisquam nobis ad quia
+                    illum odit, ratione ipsam cumque tempora ipsum cum repellendus facilis dicta ut commodi libero iusto
+                    consequatur quos qui beatae natus. Sequi, sunt itaque. Labore qui animi non earum repudiandae
+                    deleniti quasi? Iure delectus aspernatur est?</p>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <h4 class="fw-bold text-center pt-5">Lorem Ipsum</h4>
         <nav>
             <div class="nav nav-item nav-justified" role="tablist" id="nav-tab">
                 <button class="nav-link btn" data-bs-toggle="tab" type="button" role="tab" data-bs-target="#category1"
@@ -46,8 +91,7 @@
                     <div class="row my-5">
                         <div class="col-3 float-start">
                             <img src="https://wallpaperaccess.com/full/30100.jpg" class="img-fluid" alt=""
-                                data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam neque, illo dolor ipsum harum dolorum."
+                                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom"
                                 style="width: 100%;">
                         </div>
                         <div class="col-3 float-start">
@@ -180,6 +224,12 @@
     </div>
 
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 </body>
 
 </html>
